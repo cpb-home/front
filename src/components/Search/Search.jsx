@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { changeSearchField } from "../../actions/actionCreators";
 
 const Search = () => {
-  const { items, loading, error, search } = useSelector((state) => state.skills);     //приходят объекты, а надо переменные
+  const { items, loading, error, search } = useSelector((state) => state.skills);
   const dispatch = useDispatch();
 
   const chnageHandler = e => {
